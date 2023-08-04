@@ -15,6 +15,7 @@
 #define WC_NO_HARDEN
 
 #include <esp_system.h>
+#include <esp_random.h>
 
 static inline int hwrand_generate_block(uint8_t *buf, size_t len) {
     int i;
